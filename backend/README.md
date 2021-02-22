@@ -31,7 +31,7 @@
 
 ## 🧐 About <a name = "about"></a>
 
-Minify URL is url shortener web application and also available as google chrome extension ([Chrome Extension](https://github.com/CryptoSingh1337/minify-url-extension)). User can paste the long url in the extension and then this api return the short url and store that in the database. I am currently working on its front-end using ReactJS.
+Minify URL is url shortener web application and also available as google chrome extension ([Chrome Extension](https://github.com/CryptoSingh1337/minify-url-extension)). User can paste the long url in the extension and then this api return the short url and store that in the database. I am currently working on its front-end.
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
