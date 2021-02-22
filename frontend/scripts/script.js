@@ -22,7 +22,6 @@ const modal = new bootstrap.Modal(document.getElementById('staticBackdrop'));
 
 document.getElementById('submitButton').addEventListener('click', async function (e) {
     const spinner = document.getElementById('spinner');
-    spinner.classList.toggle('visually-hidden');
     const input = getInputField();
     const label = document.getElementById('response');
     const div = document.getElementById('label-div');
@@ -33,6 +32,7 @@ document.getElementById('submitButton').addEventListener('click', async function
         const value = input.value;
         const isValid = checkURL(value);
         if (isValid) {
+            spinner.classList.toggle('visually-hidden');
             const response = await (await fetch(`https://minify-url-1.herokuapp.com/?url=${value}`, { method: 'POST' })).json();
             spinner.classList.toggle('visually-hidden');
             label.innerHTML = `<a href="${response.short_url}">${response.short_url}</a>`;
