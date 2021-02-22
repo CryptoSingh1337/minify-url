@@ -1,5 +1,7 @@
 'use strict';
 
+document.getElementById('url').focus();
+
 const copy = document.getElementById('copy-box');
 copy.addEventListener('click', (e) => {
     const label = document.getElementById('response');
