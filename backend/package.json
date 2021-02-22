@@ -1,0 +1,28 @@
+{
+  "name": "minify-url",
+  "version": "1.0.0",
+  "description": "a url shortener web app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/CryptoSingh1337/minify-url-backend.git"
+  },
+  "keywords": [
+    "url-shortener"
+  ],
+  "author": "CryptoSingh1337",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^4.4.1",
+    "http-errors": "^1.8.0",
+    "md5": "^2.3.0",
+    "mongoose": "^5.11.15",
+    "morgan": "^1.10.0"
+  }
+}
