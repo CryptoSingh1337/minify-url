@@ -28,50 +28,38 @@ nav {
 }
 
 .content {
-  padding: 8%;
   height: 79vh;
+  align-items: center;
 }
 
-.inner-content {
-  width: 75%;
-  margin: 3% auto;
+.modal-header {
+  background-color: #ff002f;
+  font-weight: 600;
 }
 
-#submitButton {
-  margin-top: 15px;
+.modal-body {
+  font-weight: 500;
+}
+
+#inner-content {
+  width: 100%;
+}
+
+.input {
+  width: 50%;
+  margin: 2% auto;
 }
 
 .footer {
   font-weight: 300;
   background-color: #71c9ce;
+  min-height: 90px;
+  padding-top: 25px;
 }
 
-@media (max-width: 499px) {
-  .content {
-    padding: 20% 0;
-  }
-
-  .inner-content {
-    margin: 10% auto;
-  }
-
-  #submitButton {
-    margin-top: 15%;
-  }
-}
-
-@media (min-width: 500px) and (max-width: 1000px) {
-  .content {
-    padding: 20% 0;
-  }
-
-  .inner-content {
-    margin: 8% auto 2%;
-  }
-
-  #submitButton {
-    margin-top: 3%;
-  }
+.social a {
+  color: black;
+  padding: 5px 7px;
 }
 
 /*

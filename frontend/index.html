@@ -54,7 +54,8 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Error</h5>
+                        <h5 class="modal-title" id="staticBackdropLabel"><i class="fas fa-exclamation-triangle"></i>
+                            Error</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body" id="error">
@@ -64,18 +65,26 @@
         </div>
         <button type="button" class="btn btn-primary visually-hidden" data-bs-toggle="modal"
             data-bs-target="#staticBackdrop"></button>
-        <div class="content text-center">
-            <h2>Make Long URLs, short!</h2>
-            <input class="form-control inner-content" type="text" name="url" id="url" placeholder="Original URL">
-            <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button>
-            <div class="response visually-hidden">
-                <label id="response"><i class="input-group-text far fa-copy hvr-buzz-out" id="copy"></i></label>
+        <div class="content d-flex justify-content-center">
+            <div id="inner-content">
+                <h2>Make Long URLs, short!</h2>
+                <div class="input">
+                    <input class="form-control" type="text" name="url" id="url" placeholder="Original URL">
+                </div>
+                <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button>
+                <div class="visually-hidden">
+                    <label id="response"><i class="input-group-text far fa-copy hvr-buzz-out" id="copy"></i></label>
+                </div>
             </div>
         </div>
     </div>
     <footer>
-        <div class="container-fluid footer text-center">
-            <p>Made with ❤ by CryptoSingh1337</p>
+        <div class="footer text-center container-fluid">
+            Made with ❤ by CryptoSingh1337
+            <div class="social">
+                <a href="https://www.linkedin.com/in/saransh-kumar-2k19/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/CryptoSingh1337"><i class="fab fa-github"></i></a>
+            </div>
         </div>
     </footer>
     <script src="scripts/script.js"></script>
