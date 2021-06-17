@@ -28,7 +28,7 @@ nav {
 }
 
 .content {
-  height: 84.5vh;
+  height: 84vh;
   align-items: center;
 }
 
@@ -83,6 +83,19 @@ nav {
 .input {
   width: 50%;
   margin: 2% auto;
+}
+
+#copy-toast {
+  transition: all 0.1s ease-in-out;
+  position: absolute;
+  z-index: 100;
+  width: 200px;
+  margin-top: 10px;
+  overflow-x: hidden;
+}
+
+#copy-toast-body {
+  justify-content: space-around;
 }
 
 .footer {
