@@ -3,7 +3,6 @@ package com.saransh.minifyurl.service;
 import com.saransh.minifyurl.model.Url;
 import com.saransh.minifyurl.repository.UrlRepository;
 import org.apache.commons.codec.digest.DigestUtils;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 /**
@@ -21,7 +20,7 @@ public class UrlServiceImpl implements UrlService {
     @Override
     public Url insert(String longUrl) {
         String shortUrl = DigestUtils.md5Hex(longUrl).substring(0, 10);
-        Url url = findByShortUrl(shortUrl);
+        Url url = urlRepository.findByShortUrl(shortUrl);
         if (url == null) {
             Url saveUrl = new Url();
             saveUrl.setLongUrl(longUrl);
